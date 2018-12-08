@@ -34,7 +34,9 @@
     </header>
 
     <main>
+        <!-- Лучше так секцию не называть, задай ей класс first -->
         <section class="slider">
+            <!-- А вот уже у списка должен быть класс slider -->
             <ul>
                 <li>
                     <img src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
@@ -43,21 +45,26 @@
                     <a class="btn" href="#">About us</a>
                     <a class="btn" href="#">Watch video</a>
                 </li>
+                <!-- Для кого оставляем? Они тоже должны быть заполнены, фото можно оставить, а текст поменять, чтобы увидет работу слайдера, а он будет на JS -->
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
+            <!-- Ты забыла про пейджер для слайдера, он так же делается через список, но внутри него находятся кнопки -->
         </section>
-
+        
+        <!-- В хедер перенеси -->
         <h1 class="visually-hidden">POSH</h1>
 
         <section class="services">
+            <!-- Заголовок и описание к нему можно обвернуть в header, даже нужно -->
             <h2>Our services</h2>
             <p>Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
             <ul class="services_list">
                 <li>
                     <button type="button">
+                        <!-- Убрать картинку, потому что её можно вставить через CSS, во всех кнопках убрать её -->
                     <img src="img/icon/services-about.png" alt="About" height="40px" width="32px">
                     About</button>
                 </li>
@@ -87,6 +94,8 @@
             <ul class="articles">
                 <li></li>
                 <li>
+                    <!-- Серьезное нарушение потока в документе, сначала должна быть картинка, затем весь текстовый контент -->
+                    <!-- Снова же, в остальные пункты списка добавить информацию, и поменять только текст -->
                     <h3>To keep makeup looking Fresh take a powder</h3>
                     <img src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
                     <p>Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.</p>
@@ -97,7 +106,8 @@
                 <li></li>
             </ul>
         </section>
-
+        
+        <!-- А вот тут я бы тоже добавил секцию со скрытым заголовком -->
         <figure>
             <img src="img/content/gallery-photo.png" alt="Here must be photo" width="1600px" height="800px">
             <figcaption>
@@ -126,11 +136,15 @@
                 <li>tips</li>
                 <li>tutorials</li>
             </ul>
+            <!-- Лучше убрать список и сделать чисто через article, которые надо верно разметить, здесь они лучше подходят, чем список. -->
             <ul class="blog-reviews">
                 <li class="highlight-post">
+                    <!-- Про все статьи написал -->
+                    <!-- Это убрать, можно оформить через псевдоэлемент -->
                     <aside>Highlight Post</aside>
                     <img src="img/content/highlight-post.png" alt="Hollywood hairstyles" height="301px" width="771px">
                     <p>Hollywood hairstyles do not require a trip to a high priced Salon or beautician</p>
+                    <!-- Апрель 22, это же можно оформить через тег time -->
                     <p>Eugenia Frank / April 22</p>
                 </li>
                 <li>
@@ -157,6 +171,7 @@
             <a href="#">See more</a>
         </section>
         <section class="contacts">
+            <!-- Есть заголовок и описание к нему, в header -->
             <h2>Contact</h2>
             <p>Vastly improved treatments and increased social</p>
             <ul>
