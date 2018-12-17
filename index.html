@@ -9,6 +9,7 @@
 <body>
     <header class="page-header">
         <h1 class="visually-hidden">POSH</h1>
+        <!-- Микс сильно привязан к шапке страницы, header-info лучше заменить на contacts -->
         <address class="page-header__info header-info">
                 <a class="header-info__tel" href="tel:+84906582725">+84 90 658 2725</a>
                 <a class="header-info__address" href="#">27 Ba Trieu St, Vietnam</a>
@@ -22,6 +23,7 @@
         </ul>
         <a class="page-header__logo logo">Posh</a>
         <nav class="main-nav">
+            <!-- Микс не правильно написан, должен быть mani-nav__site-nav -->
             <ul class="main-mav__list site-nav">
                 <li class="site-nav__item"><a href="index.html">Home</a></li>
                 <li class="site-nav__item"><a href="service.html">Service</a></li>
@@ -35,7 +37,9 @@
     </header>
 
     <main class="page-main">
+        <!-- Лучше убрать класс first-slider, сделать просто first -->
         <section class="first-slider">
+            <!-- А списку лучше указать класс first__slides, а пунктам списка first__slide -->
             <ul class="first-slider__list slider1-list">
                 <li class="slider1-list__item slider1-list__item--active">
                     <img class="slider1-list__image" src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
@@ -75,6 +79,7 @@
             </ul>
 
             <ul class="first-slider__toggle-list toggle-list">
+                <!-- Ссылки и кнопки не должны быть пустые -->
                 <li class="toggle-list__item toggle-list__item--active"><button type="button"></button></li>
                 <li class="toggle-list__item"><button type="button"></button></li>
                 <li class="toggle-list__item"><button type="button"></button></li>
@@ -89,6 +94,7 @@
                 <h2 class="services__title title">Our services</h2>
                 <p class="services__description">Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
             </header>
+            <!-- А списку лучше указать класс services__slides, а пунктам списка services__slide -->
             <ul class="services__list services-list">
                 <li class="services-list__item">
                     <button class="services_about" type="button">
@@ -112,6 +118,7 @@
                 </li>
             </ul>
             <div class="services-description">
+                <!-- Не обзятельно отдельные классы писать -->
                 <ul class="services-description__list description-list">
                     <li class="description-list__item">
                         <img class="services-description__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
@@ -175,6 +182,7 @@
 
 
         <section class="Channel">
+            <!-- Класс title допиши к заголовку -->
             <h2 class="channel__title">Channel</h2>
             <video class="channel__video" width="640" height="365" controls="controls" poster="video/duel.jpg"></video>
             <a class="channel__btn btn" href="#">More video</a>
