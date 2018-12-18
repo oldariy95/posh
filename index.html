@@ -9,22 +9,20 @@
 <body>
     <header class="page-header">
         <h1 class="visually-hidden">POSH</h1>
-        <!-- Микс сильно привязан к шапке страницы, header-info лучше заменить на contacts -->
-        <address class="page-header__info header-info">
-                <a class="header-info__tel" href="tel:+84906582725">+84 90 658 2725</a>
-                <a class="header-info__address" href="#">27 Ba Trieu St, Vietnam</a>
+        <address class="page-header__info info">
+                <a class="info__tel" href="tel:+84906582725">+84 90 658 2725</a>
+                <a class="info__address" href="#">27 Ba Trieu St, Vietnam</a>
             </address>
         <ul class="page-header__social-list social-list">
             <li><a class="social-list__item" href="#">Twitter</a></li>
             <li><a class="social-list__item" href="#">Facebook</a></li>
             <li><a class="social-list__item" href="#">Youtube</a></li>
             <li><a class="social-list__item" href="#">Instagram</a></li>
-            <li><a class="social-list__item" href="#">Еще одна соцсеть)))</a></li>
+            <li><a class="social-list__item" href="#">Flickr</a></li>
         </ul>
-        <a class="page-header__logo logo">Posh</a>
+        <a class="page-header__logo">Posh</a>
         <nav class="main-nav">
-            <!-- Микс не правильно написан, должен быть mani-nav__site-nav -->
-            <ul class="main-mav__list site-nav">
+            <ul class="main-mav__site-nav site-nav">
                 <li class="site-nav__item"><a href="index.html">Home</a></li>
                 <li class="site-nav__item"><a href="service.html">Service</a></li>
                 <li class="site-nav__item"><a href="gallery.html">Gallery</a></li>
@@ -37,54 +35,52 @@
     </header>
 
     <main class="page-main">
-        <!-- Лучше убрать класс first-slider, сделать просто first -->
-        <section class="first-slider">
-            <!-- А списку лучше указать класс first__slides, а пунктам списка first__slide -->
-            <ul class="first-slider__list slider1-list">
-                <li class="slider1-list__item slider1-list__item--active">
-                    <img class="slider1-list__image" src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
-                    <h2 class="slider1-list__topic">It’s <span>Fun</span>To Make Things Up</h2>
-                    <p class="slider1-list__text">Have you ever wondered if what you know about herbal breast enlargement is accurate?</p>
-                    <a class="slider1-list-btn btn" href="#">About us</a>
-                    <a class="slider1-list-btn btn" href="#">Watch video</a>
+        <section class="first">
+            <ul class="first__slides first-slides">
+                <li class="first__slide first__slide--active">
+                    <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
+                    <h2 class="first-slides__topic">It’s <span>Fun</span>To Make Things Up</h2>
+                    <p class="first-slides__text">Have you ever wondered if what you know about herbal breast enlargement is accurate?</p>
+                    <a class="first-slides__btn btn" href="#">About us</a>
+                    <a class="first-slides__btn btn--video" href="#">Watch video</a>
                 </li>
-                <li class="slider1-list__item">
-                    <img class="slider1-list__image" src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
-                    <h2 class="slider1-list__topic">Test Topic 1</h2>
-                    <p class="slider1-list__text">Test Text 1</p>
-                    <a class="slider1-list-btn btn" href="#">About us</a>
-                    <a class="slider1-list-btn btn" href="#">Watch video</a>
+                <li class="first__slide">
+                    <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
+                    <h2 class="first-slides__topic">Test Topic 1</h2>
+                    <p class="first-slides__text">Test Text 1</p>
+                    <a class="first-slides__btn btn" href="#">About us</a>
+                    <a class="first-slides__btn btn--video" href="#">Watch video</a>
                 </li>
-                <li class="slider1-list__item">
-                    <img class="slider1-list__image" src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
-                    <h2 class="slider1-list__topic">Test Topic 2</h2>
-                    <p class="slider1-list__text">Test Text 2</p>
-                    <a class="slider1-list-btn btn" href="#">About us</a>
-                    <a class="slider1-list-btn btn" href="#">Watch video</a>
+                <li class="first__slide">
+                    <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
+                    <h2 class="first-slides__topic">Test Topic 2</h2>
+                    <p class="first-slides__text">Test Text 2</p>
+                    <a class="first-slides__btn btn" href="#">About us</a>
+                    <a class="first-slides__btn btn--video" href="#">Watch video</a>
                 </li>
-                <li class="slider1-list__item">
-                    <img class="slider1-list__image" src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
-                    <h2 class="slider1-list__topic">Test Topic 3</h2>
-                    <p class="slider1-list__text">Test Text 3</p>
-                    <a class="slider1-list-btn btn" href="#">About us</a>
-                    <a class="slider1-list-btn btn" href="#">Watch video</a>
+                <li class="first__slide">
+                    <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
+                    <h2 class="first-slides__topic">Test Topic 3</h2>
+                    <p class="first-slides__text">Test Text 3</p>
+                    <a class="first-slides__btn btn" href="#">About us</a>
+                    <a class="first-slides__btn btn--video" href="#">Watch video</a>
                 </li>
-                <li class="slider1-list__item">
-                    <img class="slider1-list__image" src="img/background/slider.png" alt="Here must be a photo" width="1600px" height="846px">
-                    <h2 class="slider1-list__topic">Test Topic 4</h2>
-                    <p class="slider1-list__text">Test Text 4</p>
-                    <a class="slider1-list-btn btn" href="#">About us</a>
-                    <a class="slider1-list-btn btn" href="#">Watch video</a>
+                <li class="first__slide">
+                    <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
+                    <h2 class="first-slides__topic">Test Topic 4</h2>
+                    <p class="first-slides__text">Test Text 4</p>
+                    <a class="first-slides__btn btn" href="#">About us</a>
+                    <a class="first-slides__btn btn--video" href="#">Watch video</a>
                 </li>
             </ul>
 
-            <ul class="first-slider__toggle-list toggle-list">
+            <ul class="first__toggle-list">
                 <!-- Ссылки и кнопки не должны быть пустые -->
-                <li class="toggle-list__item toggle-list__item--active"><button type="button"></button></li>
-                <li class="toggle-list__item"><button type="button"></button></li>
-                <li class="toggle-list__item"><button type="button"></button></li>
-                <li class="toggle-list__item"><button type="button"></button></li>
-                <li class="toggle-list__item"><button type="button"></button></li>
+                <li class="first__toggle first__toggle--active"><button type="button">1</button></li>
+                <li class="first__toggle">2<button type="button"></button></li>
+                <li class="first__toggle">3<button type="button"></button></li>
+                <li class="first__toggle">4<button type="button"></button></li>
+                <li class="first__toggle">5<button type="button"></button></li>
             </ul>
         </section>
 
@@ -92,63 +88,62 @@
         <section class="services">
             <header class="services-header">
                 <h2 class="services__title title">Our services</h2>
-                <p class="services__description">Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
+                <p class="services__description description">Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
             </header>
             <!-- А списку лучше указать класс services__slides, а пунктам списка services__slide -->
-            <ul class="services__list services-list">
-                <li class="services-list__item">
-                    <button class="services_about" type="button">
+            <ul class="services__list">
+                <li class="services__item">
+                    <button class="services__toggle--about" type="button">
                     About</button>
                 </li>
-                <li class="services-list__item services-list__item--active">
-                    <button class="services_wedding" type="button">
+                <li class="services__item services-list__item--active">
+                    <button class="services__toggle--wedding" type="button">
                     Wedding</button>
                 </li>
-                <li class="services-list__item">
-                    <button class="services_party" type="button">
+                <li class="services__item">
+                    <button class="services__toggle--party" type="button">
                     Party</button>
                 </li>
-                <li class="services-list__item">
-                    <button class="services_beauty-box" type="button">
+                <li class="services__item">
+                    <button class="services__toggle--beauty" type="button">
                     Beauty Box</button>
                 </li>
-                <li class="services-list__item">
-                    <button class="services_course" type="button">
+                <li class="services__item">
+                    <button class="services__toggle--course" type="button">
                     Course</button>
                 </li>
             </ul>
-            <div class="services-description">
-                <!-- Не обзятельно отдельные классы писать -->
-                <ul class="services-description__list description-list">
-                    <li class="description-list__item">
-                        <img class="services-description__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
-                        <h3 class="services-description__title">About</h3>
-                        <p class="services-description__text">About us</p>
-                        <a class="services-description__more" href="#">Learn more</a>
+            <div class="services-content">
+                <ul class="service__description">
+                    <li class="services-content__item">
+                        <img class="services-content__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380" width="630">
+                        <h3 class="services-content__title">About</h3>
+                        <p class="services-content__text">About us</p>
+                        <a class="services-content__more" href="#">Learn more</a>
                     </li>
-                    <li class="description-list__item">
-                        <img class="services-description__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
-                        <h3 class="services-description__title">To keep makeup looking Fresh take a powder</h3>
-                        <p class="services-description__text">Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.</p>
-                        <a class="services-description__more" href="#">Learn more</a>
+                    <li class="services-content__item">
+                        <img class="services-content__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380" width="630">
+                        <h3 class="services-content__title">To keep makeup looking Fresh take a powder</h3>
+                        <p class="services-content__text">Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.</p>
+                        <a class="services-content__more" href="#">Learn more</a>
                     </li>
-                    <li class="description-list__item">
-                        <img class="services-description__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
-                        <h3 class="services-description__title">Party</h3>
-                        <p class="services-description__text">It's party time</p>
-                        <a class="services-description__more" href="#">Learn more</a>
+                    <li class="services-content__item">
+                        <img class="services-content__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380" width="630">
+                        <h3 class="services-content__title">Party</h3>
+                        <p class="services-content__text">It's party time</p>
+                        <a class="services-content__more" href="#">Learn more</a>
                     </li>
-                    <li class="description-list__item">
-                        <img class="services-description__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
-                        <h3 class="services-description__title">Beauty Box</h3>
-                        <p class="services-description__text">It's beauty box</p>
-                        <a class="services-description__more" href="#">Learn more</a>
+                    <li class="services-content__item">
+                        <img class="services-content__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380" width="630">
+                        <h3 class="services-content__title">Beauty Box</h3>
+                        <p class="services-content__text">It's beauty box</p>
+                        <a class="services-content__more" href="#">Learn more</a>
                     </li>
-                    <li class="description-list__item">
-                        <img class="services-description__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380px" width="630px">
-                        <h3 class="services-description__title">Course</h3>
-                        <p class="services-description__text">Visit our course</p>
-                        <a class="services-description__more" href="#">Learn more</a>
+                    <li class="services-content__item">
+                        <img class="services-content_image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380" width="630">
+                        <h3 class="services-content__title">Course</h3>
+                        <p class="services-content__text">Visit our course</p>
+                        <a class="services-content__more" href="#">Learn more</a>
                     </li>
                 </ul>
             </div>
@@ -156,25 +151,25 @@
 
         <section class="gallery">
             <h2 class="visually-hidden">Gallery</h2>
-            <ul class="gallery__slider slider2-list">
-                <li class="slider2-list__item">
-                    <img class="gallery__photo photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600px" height="800px">
-                    <time class="photo__date" datetime="2018-09-24">Sep 24</time>
-                    <p class="photo__description">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their
+            <ul class="gallery__slides">
+                <li class="gallery__item gallery__item--active">
+                    <img class="gallery__photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600" height="800">
+                    <time class="gallery_date" datetime="2018-09-24">Sep 24</time>
+                    <p class="gallery__description">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their
                         breast size...
                     </p>
                     <a class="gallery__arrow">Arrow</a>
                 </li>
-                <li class="slider2-list__item">
-                    <img class="gallery__photo photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600px" height="800px">
-                    <time class="photo__date" datetime="2018-09-23">Sep 23</time>
-                    <p class="photo__description">Test text</p>
+                <li class="gallery__item">
+                    <img class="gallery__photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600" height="800">
+                    <time class="gallery__date" datetime="2018-09-23">Sep 23</time>
+                    <p class="gallery__description">Test text</p>
                     <a class="gallery__arrow">Arrow</a>
                 </li>
-                <li class="slider2-list__item">
-                    <img class="gallery__photo photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600px" height="800px">
-                    <time class="photo__date" datetime="2018-10-23">Oct 23</time>
-                    <p class="photo__description">Test 2 text</p>
+                <li class="gallery__item">
+                    <img class="gallery__photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600" height="800">
+                    <time class="gallery__date" datetime="2018-10-23">Oct 23</time>
+                    <p class="gallery__description">Test 2 text</p>
                     <a class="gallery__arrow">Arrow</a>
                 </li>
             </ul>
@@ -182,98 +177,94 @@
 
 
         <section class="Channel">
-            <!-- Класс title допиши к заголовку -->
-            <h2 class="channel__title">Channel</h2>
+            <header class="channel__header">
+                <h2 class="channel__title title">Channel</h2>
+                <p class="channel__description description">Vastly improved treatments and increased social</p>
+            </header>
             <video class="channel__video" width="640" height="365" controls="controls" poster="video/duel.jpg"></video>
-            <a class="channel__btn btn" href="#">More video</a>
+            <a class="channel__btn btn--more-video" href="#">More video</a>
         </section>
 
         <section class="latest-blog">
             <h2 class="latest-blog__title">Latest Blog</h2>
-            <ul class="latest-blog__filter filter-list">
-                <li class="filter-list__item">all</li>
-                <li class="filter-list__item filter-list__item--current">reviews</li>
-                <li class="filter-list__item">looks</li>
-                <li class="filter-list__item">lifestyles</li>
-                <li class="filter-list__item">tips</li>
-                <li class="filter-list__item">tutorials</li>
+            <ul class="latest-blog__filter">
+                <li class="latest-blog__item">all</li>
+                <li class="latest-blog__item latest-blog__item--current">reviews</li>
+                <li class="latest-blog__item">looks</li>
+                <li class="latest-blog__item">lifestyles</li>
+                <li class="latest-blog__item">tips</li>
+                <li class="latest-blog__item">tutorials</li>
             </ul>
-            <!-- Лучше убрать список и сделать чисто через article, которые надо верно разметить, здесь они лучше подходят, чем список. -->
-            <ul class="blog-reviews">
-                <li class="highlight-post">
-                    <!-- Про все статьи написал -->
-                    <!-- Это убрать, можно оформить через псевдоэлемент -->
 
-                    <img src="img/content/highlight-post.png" alt="Hollywood hairstyles" height="301px" width="771px">
-                    <p>Hollywood hairstyles do not require a trip to a high priced Salon or beautician</p>
-                    <!-- Апрель 22, это же можно оформить через тег time -->
-                    <p>Eugenia Frank / April 22</p>
-                </li>
-                <li>
-                    <img src="img/content/post2.png" alt="Forehead lift" height="301px" width="371px">
-                    <p>Forehead lift brow lift temporal lift for head rejuvenation</p>
-                    <p>Eugenia Frank / April 22</p>
-                </li>
-                <li>
-                    <img src="img/content/post3.png" alt="Breast enlargement exercises" height="301px" width="371px">
-                    <p>Breast enlargement exercises cheapest inborn sense promoting breast lump</p>
-                    <p>Eugenia Frank / April 22</p>
-                </li>
-                <li>
-                    <img src="img/content/post4.png" alt="Curling irons" height="301px" width="371px">
-                    <p>Curling irons are as individual as the women who use them</p>
-                    <p>Eugenia Frank / April 22</p>
-                </li>
-                <li>
-                    <img src="img/content/post5.png" alt="Hollywood hairstyles" height="301px" width="371px">
-                    <p>Hollywood hairstyles do not require a trip to a high priced salon or beautician</p>
-                    <p>Eugenia Frank / April 22</p>
-                </li>
-            </ul>
-            <a href="#">See more</a>
+            <article class="latest-blog__highlight-post">
+                <img class="latest-blog__image--highlight" src="img/content/highlight-post.png" alt="Hollywood hairstyles" height="301" width="771">
+                <p class="latest-blog__text">Hollywood hairstyles do not require a trip to a high priced Salon or beautician</p>
+                <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
+            </article>
+
+            <article class="latest-blog__second-post">
+                <img class="latest-blog__image--shadow" src="img/content/post2.png" alt="Forehead lift" height="301" width="371">
+                <p class="latest-blog__text">Forehead lift brow lift temporal lift for head rejuvenation</p>
+                <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
+            </article>
+            <article class="latest-blog__post">
+                <img class="latest-blog__image" src="img/content/post3.png" alt="Breast enlargement exercises" height="301" width="371">
+                <p class="latest-blog__text">Breast enlargement exercises cheapest inborn sense promoting breast lump</p>
+                <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
+            </article>
+            <article class="latest-blog__post">
+                <img class="latest-blog__image" src="img/content/post4.png" alt="Curling irons" height="301" width="371">
+                <p class="latest-blog__text">Curling irons are as individual as the women who use them</p>
+                <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
+            </article>
+            <article class="latest-blog__post">
+                <img class="latest-blog__image" src="img/content/post5.png" alt="Hollywood hairstyles" height="301" width="371">
+                <p class="latest-blog__text">Hollywood hairstyles do not require a trip to a high priced salon or beautician</p>
+                <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
+            </article>
+            <a class="latest-blog__btn btn" href="#">See more</a>
         </section>
+
         <section class="contacts">
-            <!-- Есть заголовок и описание к нему, в header -->
-            <h2>Contact</h2>
-            <p>Vastly improved treatments and increased social</p>
-            <ul>
-                <li>
-
-                    <h3>Address</h3>
-                    <p>27 Ba Trieu St. Hue, Vietnam</p>
+            <header class="contacts__header">
+                <h2 class="contacts__title title">Contact</h2>
+                <p class="contacts__description description">Vastly improved treatments and increased social</p>
+            </header>
+            <ul class="contacts__list">
+                <li class="contacts__item--address">
+                    <h3 class="contacts__subtitle subtitle">Address</h3>
+                    <p class="contacts__data">27 Ba Trieu St. Hue, Vietnam</p>
                 </li>
-                <li>
-
-                    <h3>Phone numbers</h3>
-                    <a class="contact-tel" href="tel:+84906582725">+84 90 658 2725</a>
+                <li class="contacts__item--phone">
+                    <h3 class="contacts__subtitle subtitle">Phone numbers</h3>
+                    <a class="contacts__data" href="tel:+84906582725">+84 90 658 2725</a>
                 </li>
-                <li>
-
-                    <h3>Email contact</h3>
-                    <a href="mailto:junoteamvn@gmail.com">junoteamvn@gmail.com</a>
+                <li class="contacts__item">
+                    <h3 class="contacts__subtitle subtitle">Email contact</h3>
+                    <a class="contacts__data" href="mailto:junoteamvn@gmail.com">junoteamvn@gmail.com</a>
                 </li>
             </ul>
         </section>
 
     </main>
 
-    <footer>
-        <nav class="footer-navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="channel.html">Channel</a></li>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="index.html">Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <footer class="page-footer">
+        <nav class="footer__nav">
+            <ul class="footer-nav__site-nav site-nav">
+                <li class="site-nav__item"><a href="index.html">Home</a></li>
+                <li class="site-nav__item"><a href="service.html">Service</a></li>
+                <li class="site-nav__item"><a href="gallery.html">Gallery</a></li>
+                <li class="site-nav__item"><a href="channel.html">Channel</a></li>
+                <li class="site-nav__item"><a href="index.html">Blog</a></li>
+                <li class="site-nav__item"><a href="index.html">Team</a></li>
+                <li class="site-nav__item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <a class="footer-logo">POSH</a>
-        <ul class="footer-social">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Youtube</a></li>
+        <a class="page-footer__logo">POSH</a>
+        <ul class="page-footer__social footer-social">
+            <li class="footer-social__item--facebook"><a href="#">Facebook</a></li>
+            <li class="footer-social__item--instagram"><a href="#">Instagram</a></li>
+            <li class="footer-social__item--youtube"><a href="#">Youtube</a></li>
         </ul>
     </footer>
     <a href="#" class="top-button">Go to Top</a>
