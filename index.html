@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>POSH</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,22 +16,22 @@
                 <a class="info__address" href="#">27 Ba Trieu St, Vietnam</a>
             </address>
         <ul class="page-header__social-list social-list">
-            <li><a class="social-list__item" href="#">Twitter</a></li>
-            <li><a class="social-list__item" href="#">Facebook</a></li>
-            <li><a class="social-list__item" href="#">Youtube</a></li>
-            <li><a class="social-list__item" href="#">Instagram</a></li>
-            <li><a class="social-list__item" href="#">Flickr</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">Twitter</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">Facebook</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">Youtube</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">Instagram</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">Flickr</a></li>
         </ul>
-        <a class="page-header__logo">Posh</a>
+        <a class="page-header__logo" href="#"><img src="img/content/logo-header.png" alt="Posh"></a>
         <nav class="main-nav">
             <ul class="main-mav__site-nav site-nav">
-                <li class="site-nav__item"><a href="index.html">Home</a></li>
-                <li class="site-nav__item"><a href="service.html">Service</a></li>
-                <li class="site-nav__item"><a href="gallery.html">Gallery</a></li>
-                <li class="site-nav__item"><a href="channel.html">Channel</a></li>
-                <li class="site-nav__item"><a href="index.html">Blog</a></li>
-                <li class="site-nav__item"><a href="index.html">Team</a></li>
-                <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Home</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="service.html">Service</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="channel.html">Channel</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Blog</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Team</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -39,35 +41,35 @@
             <ul class="first__slides first-slides">
                 <li class="first__slide first__slide--active">
                     <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
-                    <h2 class="first-slides__topic">It’s <span>Fun</span>To Make Things Up</h2>
+                    <h2 class="first-slides__topic">It’s <span>Fun</span> To Make Things Up</h2>
                     <p class="first-slides__text">Have you ever wondered if what you know about herbal breast enlargement is accurate?</p>
                     <a class="first-slides__btn btn" href="#">About us</a>
                     <a class="first-slides__btn btn btn--video" href="#">Watch video</a>
                 </li>
                 <li class="first__slide">
                     <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
-                    <h2 class="first-slides__topic">Test Topic 1</h2>
+                    <h2 class="first-slides__topic">Test Topic <span>1</span></h2>
                     <p class="first-slides__text">Test Text 1</p>
                     <a class="first-slides__btn btn" href="#">About us</a>
                     <a class="first-slides__btn btn btn--video" href="#">Watch video</a>
                 </li>
                 <li class="first__slide">
                     <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
-                    <h2 class="first-slides__topic">Test Topic 2</h2>
+                    <h2 class="first-slides__topic">Test Topic <span>2</span></h2>
                     <p class="first-slides__text">Test Text 2</p>
                     <a class="first-slides__btn btn" href="#">About us</a>
                     <a class="first-slides__btn btn btn--video" href="#">Watch video</a>
                 </li>
                 <li class="first__slide">
                     <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
-                    <h2 class="first-slides__topic">Test Topic 3</h2>
+                    <h2 class="first-slides__topic">Test Topic <span>3</span></h2>
                     <p class="first-slides__text">Test Text 3</p>
                     <a class="first-slides__btn btn" href="#">About us</a>
                     <a class="first-slides__btn btn btn--video" href="#">Watch video</a>
                 </li>
                 <li class="first__slide">
                     <img class="first-slides__image" src="img/background/slider.png" alt="Here must be a photo" width="1600" height="846">
-                    <h2 class="first-slides__topic">Test Topic 4</h2>
+                    <h2 class="first-slides__topic">Test Topic <span>4</span></h2>
                     <p class="first-slides__text">Test Text 4</p>
                     <a class="first-slides__btn btn" href="#">About us</a>
                     <a class="first-slides__btn btn btn--video" href="#">Watch video</a>
@@ -75,11 +77,11 @@
             </ul>
 
             <ul class="first__toggle-list">
-                <li class="first__toggle first__toggle--active"><button type="button">1</button></li>
-                <li class="first__toggle"><button type="button">2</button></li>
-                <li class="first__toggle"><button type="button">3</button></li>
-                <li class="first__toggle"><button type="button">4</button></li>
-                <li class="first__toggle"><button type="button">5</button></li>
+                <li class="first__toggle first__toggle--active"><button class="first__toggle-btn" type="button">1</button></li>
+                <li class="first__toggle"><button class="first__toggle-btn" type="button">2</button></li>
+                <li class="first__toggle"><button class="first__toggle-btn" type="button">3</button></li>
+                <li class="first__toggle"><button class="first__toggle-btn" type="button">4</button></li>
+                <li class="first__toggle"><button class="first__toggle-btn" type="button">5</button></li>
             </ul>
         </section>
 
@@ -88,7 +90,7 @@
             <header class="services-header">
                 <h2 class="services__title title">Our services</h2>
                 <p class="services__description description">Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
-            </header>            
+            </header>
             <ul class="services__list">
                 <li class="services__item">
                     <button class="services__toggle services__toggle--about" type="button">
@@ -121,7 +123,7 @@
                     </li>
                     <li class="services-content__item">
                         <img class="services-content__image" src="img/content/services-wedding-photo.png" alt="Wedding Day" height="380" width="630">
-                        <h3 class="services-content__title">To keep makeup looking Fresh take a powder</h3>
+                        <h3 class="services-content__title">To keep makeup looking Fresh<br>take a powder</h3>
                         <p class="services-content__text">Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.</p>
                         <a class="services-content__more" href="#">Learn more</a>
                     </li>
@@ -152,7 +154,7 @@
             <ul class="gallery__slides">
                 <li class="gallery__item gallery__item--active">
                     <img class="gallery__photo" src="img/content/gallery-photo.png" alt="Here must be photo" width="1600" height="800">
-                    <time class="gallery_date" datetime="2018-09-24">Sep 24</time>
+                    <time class="gallery__date" datetime="2018-09-24">Sep 24</time>
                     <p class="gallery__description">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their
                         breast size...
                     </p>
@@ -184,7 +186,7 @@
         </section>
 
         <section class="latest-blog">
-            <h2 class="latest-blog__title">Latest Blog</h2>
+            <h2 class="latest-blog__title title">Latest Blog</h2>
             <ul class="latest-blog__filter">
                 <li class="latest-blog__item">all</li>
                 <li class="latest-blog__item latest-blog__item--current">reviews</li>
@@ -197,24 +199,24 @@
             <article class="latest-blog__highlight-post">
                 <h3 class="visually-hidden">Article 1</h3>
                 <img class="latest-blog__image latest-blog__image--highlight" src="img/content/highlight-post.png" alt="Hollywood hairstyles" height="301" width="771">
-                <p class="latest-blog__text">Hollywood hairstyles do not require a trip to a high priced Salon or beautician</p>
+                <p class="latest-blog__text">Hollywood hairstyles do not require a trip to a high priced<br>Salon or beautician</p>
                 <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
             </article>
 
             <article class="latest-blog__second-post">
-                    <h3 class="visually-hidden">Article 2</h3>
+                <h3 class="visually-hidden">Article 2</h3>
                 <img class="latest-blog latest-blog__image--shadow" src="img/content/post2.png" alt="Forehead lift" height="301" width="371">
                 <p class="latest-blog__text">Forehead lift brow lift temporal lift for head rejuvenation</p>
                 <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
             </article>
             <article class="latest-blog__post">
-                    <h3 class="visually-hidden">Article 3</h3>
+                <h3 class="visually-hidden">Article 3</h3>
                 <img class="latest-blog__image" src="img/content/post3.png" alt="Breast enlargement exercises" height="301" width="371">
                 <p class="latest-blog__text">Breast enlargement exercises cheapest inborn sense promoting breast lump</p>
                 <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
             </article>
             <article class="latest-blog__post">
-                    <h3 class="visually-hidden">Article 4</h3>
+                <h3 class="visually-hidden">Article 4</h3>
                 <img class="latest-blog__image" src="img/content/post4.png" alt="Curling irons" height="301" width="371">
                 <p class="latest-blog__text">Curling irons are as individual as the women who use them</p>
                 <footer class="latest-blog__author">Eugenia Frank / <time datetime="2018-04-22">April 22</time></footer>
@@ -254,20 +256,20 @@
     <footer class="page-footer">
         <nav class="footer__nav">
             <ul class="footer-nav__site-nav site-nav">
-                <li class="site-nav__item"><a href="index.html">Home</a></li>
-                <li class="site-nav__item"><a href="service.html">Service</a></li>
-                <li class="site-nav__item"><a href="gallery.html">Gallery</a></li>
-                <li class="site-nav__item"><a href="channel.html">Channel</a></li>
-                <li class="site-nav__item"><a href="index.html">Blog</a></li>
-                <li class="site-nav__item"><a href="index.html">Team</a></li>
-                <li class="site-nav__item"><a href="contact.html">Contact</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Home</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="service.html">Service</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="channel.html">Channel</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Blog</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Team</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <a class="page-footer__logo">POSH</a>
+        <a class="page-footer__logo"><img src="img/content/logo-footer.png" alt="POSH"></a>
         <ul class="page-footer__social footer-social">
-            <li class="footer-social__item footer-social__item--facebook"><a href="#">Facebook</a></li>
-            <li class="footer-social__item footer-social__item--instagram"><a href="#">Instagram</a></li>
-            <li class="footer-social__item footer-social__item--youtube"><a href="#">Youtube</a></li>
+            <li class="footer-social__item footer-social__item--facebook"><a class="footer-social__link" href="#">Facebook /</a></li>
+            <li class="footer-social__item footer-social__item--instagram"><a class="footer-social__link" href="#">Instagram /</a></li>
+            <li class="footer-social__item footer-social__item--youtube"><a class="footer-social__link" href="#">Youtube</a></li>
         </ul>
     </footer>
     <a href="#" class="top-button">Go to Top</a>
