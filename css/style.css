@@ -34,6 +34,7 @@
 }
 
 body {
+    /* Для шрифтов обязательно указывай альтернативные варианты, к примеру Arial, Helvetica */
     font-family: 'Lato Regular', sans-serif;
     font-size: 16px;
     background-color: #fbfcf5;
@@ -54,6 +55,7 @@ a {
 }
 
 .page-header__social-list {
+    /* Для списков так же важно делать сброс padding и margin */
     list-style: none;
 }
 
@@ -259,6 +261,7 @@ a {
 }
 
 .footer-social__link:hover {
+    /* Пдчеркивание ссылок можно сделать по другому, даже нужно */
     text-decoration: underline;
 }
 
