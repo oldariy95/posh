@@ -68,6 +68,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    max-height: 862px;
 }
 
 .container{
@@ -314,10 +315,14 @@ a {
     background-image: url(../img/content/gallery-photo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
+    max-height: 803px;
 }
 
 .gallery__slides {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .gallery__item{
@@ -334,6 +339,7 @@ a {
     padding-bottom: 30px;
     padding-left: 85px;
     padding-right: 90px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
