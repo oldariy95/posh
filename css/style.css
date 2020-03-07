@@ -45,7 +45,7 @@ html {
 
 body {
     /* Для шрифтов обязательно указывай альтернативные варианты, к примеру Arial, Helvetica */
-    font-family: 'Lato Regular', sans-serif;
+    font-family: 'Lato Regular', Helvetica, sans-serif;
     font-size: 16px;
     background-color: #fbfcf5;
 }
@@ -69,6 +69,7 @@ a {
     background-repeat: no-repeat;
     background-position: top center;
     max-height: 862px;
+    margin-bottom: 120px;
 }
 
 .container{
@@ -81,7 +82,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    margin-bottom: 45px;    
+    margin-bottom: 15px;    
 }
 
 .page-header__info a {
@@ -91,7 +92,12 @@ a {
 }
 
 .info__tel{
-    margin-right: 45px;
+    margin-right: 30px;
+    padding-left: 15px;
+}
+
+.info__address{
+    padding-left: 15px;
 }
 
 .page-header__social-list {
@@ -103,7 +109,7 @@ a {
     display: flex;
 }
 
-.social-list__item{
+.social-list__item:not(:first-child){
     padding-left: 25px;
 }
 
@@ -111,7 +117,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 260px;
+
+}
+
+.page-header__logo{
+    margin-top: 25px;
 }
 
 .main-mav__site-nav {
@@ -119,30 +129,53 @@ a {
 
     padding: 0;
     margin: 0;
-    display: flex;    
+    display: flex;  
+    flex-wrap: wrap;  
 }
 
-.site-nav__item{
-    padding-left: 30px;
-}
 
 .site-nav__link {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Lato Medium', sans-serif;
+    font-family: 'Lato Medium', Helvetica, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 100;
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+}
+
+.site-nav__item:last-child .site-nav__link{
+    margin-right: 0;
+}
+
+.main-mav__site-nav .site-nav__link:hover{
+    border-top: 3px solid #e8be7b;
+    padding-top: 42px;
+    
+}
+
+
+
+.first{
+    min-height: 708px;
+    display: flex;
+    
 }
 
 
 .first__slides {
     list-style: none;
+    padding: 0;
+    margin: auto;
 }
 
 .first-slides__topic {
     color: #ffffff;
-    font-family: 'Butler Medium', serif;
+    font-family: 'Butler Medium', Georgia, serif;
     font-size: 64px;
     font-weight: 400;
     text-transform: capitalize;
@@ -169,8 +202,6 @@ a {
 .buttons-wrapper{    
     display: flex;
     justify-content: center;
-    padding-bottom: 260px;
-    margin-bottom: 120px;
 }
 
 .first-slides__btn {
@@ -180,10 +211,17 @@ a {
 
     border: 1px solid #ffffff;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     margin-right: 30px;
     width: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-wrapper .btn--video{
+    margin-right: 0;
 }
 
 .first__toggle-list {
@@ -204,7 +242,7 @@ a {
 }
 
 .title {
-    font-family: 'Butler Medium', serif;
+    font-family: 'Butler Medium', Georgia, serif;
     color: #3a3a3a;
     font-size: 48px;
     letter-spacing: 1.44px;
@@ -239,16 +277,54 @@ a {
 }
 
 .services__item {
-    font-family: 'Butler Medium', serif;
+    font-family: 'Butler Medium', Georgia, serif;
     color: #4c4c4c;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 200;
+    text-align: center;
 
-    width: 180px;
+    width: 170px;
     min-height: 172px;
     padding-top: 125px;
     margin-left: 70px;
+    position: relative;
+}
+
+.services__item:first-child{
+    margin-left: 0;
+}
+
+.services__item::before{
+    content: "";
+    background-image: url('../img/icon/services-about.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 41px;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+}
+
+.services__item--wedding::before{
+    background-image: url(../img/icon/services-wedding.png);
+      
+}
+
+.services__item--party::before{
+    background-image: url(../img/icon/services-party.png);
+    
+}
+
+.services__item--beauty::before{
+    background-image: url(../img/icon/services-beautybox.png);
+    
+}
+
+.services__item--course::before{
+    background-image: url(../img/icon/services-course.png);
+   
 }
 
 .services-content{
@@ -256,26 +332,13 @@ a {
     margin-bottom: 120px;
 }
 
-.services-content__image-wrapper{
-    margin-right: 72px;
-    position: relative;
-    
-}
+
 
 .services-content__image{
-    position: relative;
-    z-index: 1;
+    box-shadow: 12px 12px #e8be7b;
+    margin-right: 72px;
 }
 
-.services-content__image-shadow{
-    width: 630px;
-    height: 380px;
-    background-color: #e8be7b;
-    position: absolute;
-    top: 12px;
-    left: 12px;
-       
-}
 
 .service-content__text{
     padding: 0;
@@ -285,7 +348,7 @@ a {
 }
 
 .services-content__title {
-    font-family: 'Butler Medium', serif;
+    font-family: 'Butler Medium', Georgia, serif;
     color: #3a3a3a;
     text-transform: capitalize;
     font-size: 23.95px;
@@ -305,7 +368,7 @@ a {
 }
 
 .services-content__more {
-    font-family: 'Lato Medium', sans-serif;
+    font-family: 'Lato Medium', Helvetica, sans-serif;
     color: #d6a862;
     font-size: 17.97px;
     text-transform: uppercase;
@@ -316,19 +379,22 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    max-height: 803px;
+    
+    margin-bottom: 115px;
 }
 
 .gallery__slides {
     list-style: none;
     padding: 0;
     margin: 0;
+    min-height: 803px;
+
+    display: flex;    
+    flex-direction: column-reverse;
 }
 
 .gallery__item{
-    padding-top: 600px;
-    padding-bottom: 58px;
-    margin-bottom: 115px;
+    margin-bottom: 60px;
 }
 
 .gallery-wrapper{
@@ -345,7 +411,7 @@ a {
 }
 
 .gallery__date {
-    font-family: 'Butler Medium', sans-serif;
+    font-family: 'Butler Medium', Helvetica, sans-serif;
     color: #3a3a3a;
     font-size: 32px;
 
@@ -371,7 +437,7 @@ a {
 }
 
 .channel__btn {
-    font-family: 'Avenir LT Medium', sans-serif;
+    font-family: 'Avenir LT Medium', Helvetica, sans-serif;
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
@@ -419,7 +485,7 @@ a {
 
 .latest-blog__posts-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 65px;
 }
@@ -434,19 +500,11 @@ a {
 .latest-blog__highlight-post{
     max-width: 770px;
 }
+
 .latest-blog__image--shadow{
-    position: relative;
-    z-index: 1;
+    box-shadow: 12px 12px #e8be7b;
 }
 
-.latest-blog__image-shadow{
-    width: 371px;
-    height: 301px;
-    background-color: #e8be7b;
-    position: absolute;
-    top: 12px;
-    left: 12px;
-}
 
 .latest-blog__text {
     color: #525252;
@@ -456,7 +514,7 @@ a {
 }
 
 .latest-blog__author {
-    font-family: 'Butler Light', serif;
+    font-family: 'Butler Light', Georgia, serif;
     color: #757575;
     font-weight: 100;
 }
@@ -464,7 +522,7 @@ a {
 
 
 .latest-blog__btn {
-    font-family: 'Lato Medium', sans-serif;
+    font-family: 'Lato Medium', Helvetica, sans-serif;
     color: #3a3a3a;
     font-size: 14px;
     text-transform: uppercase;
@@ -492,6 +550,8 @@ a {
 
 .contacts__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 
     display: flex;
     justify-content: space-around;
@@ -507,10 +567,12 @@ a {
 }
 
 .contacts__data {
-    font-family: 'Butler Light', serif;
+    font-family: 'Butler Light', Georgia, serif;
     color: #2a2a2a;
     font-size: 24.01px;
     font-weight: 100;
+
+    margin: 0;
 }
 
 .page-footer {
@@ -554,6 +616,10 @@ a {
     margin-right: 5px;
 }
 
+.footer-social__item:not(:last-child)::after{
+    content: ' /';
+    }
+
 .footer-social__link {
     color: #ffffff;
     text-transform: lowercase;
@@ -563,12 +629,13 @@ a {
 
 .footer-social__link:hover {
     /* Пдчеркивание ссылок можно сделать по другому, даже нужно */
-    text-decoration: underline;
+    border-bottom: 1px solid #ffffff;
+    
 }
 
-.footer-social__link:nth-child(2n):hover{
-    text-decoration: none;
-}
+
+
+.
 .top-button {
     color: #ffffff;
     font-size: 14px;
